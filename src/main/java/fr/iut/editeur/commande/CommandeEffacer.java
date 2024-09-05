@@ -8,13 +8,13 @@ public class CommandeEffacer extends CommandeDocument{
     }
 
     @Override
-    public void executer(){
-        if (parameters.length > 1){
-            System.err.println("Format attendu : effacer");
+    public void executer() {
+        if(parameters.length < 2) {
+            System.err.println("Format attendu : effacer;texte");
             return;
         }
-
-        this.document.effacer();
+        String texte = parameters[1];
+        this.document.effacer(texte);
         super.executer();
     }
 }

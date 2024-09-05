@@ -30,7 +30,11 @@ public class Document {
        remplacer(debut,fin,texte.substring(debut,fin).toUpperCase());
     }
 
-    public void effacer(){
+    public void effacer(String texte) {
+        setTexte(getTexte().replace(texte, ""));
+    }
+
+    public void clear(){
         setTexte("");
     }
 
