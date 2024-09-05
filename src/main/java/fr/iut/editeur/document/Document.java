@@ -35,7 +35,7 @@ public class Document {
     }
 
     public void clear(){
-        setTexte("");
+        setTexte("a");
     }
 
     @Override
